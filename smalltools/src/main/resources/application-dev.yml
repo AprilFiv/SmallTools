@@ -1,0 +1,45 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: smalltools
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    pool:
+      max-active: 8
+      max-wait: 1
+      max-idle: 8
+      min-idle: 0
+    timeout: 15000
+    password: Warenbei1.
+    name: trans
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/slippera?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+#    username: root
+#    password: Warenbei1.
+#    dbcp2:
+#      initial-size: 20
+#      max-total: 50
+#      max-idle: 20
+#      min-idle: 10
+#      max-wait-millis: 10000
+#      default-auto-commit: true
+#      min-evictable-idle-time-millis: 3600000
+#      test-while-idle: true
+#      time-between-eviction-runs-millis: 40000
+#    sql-script-encoding: utf-8
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    generate-ddl: true
+  http:
+    encoding:
+      charset: utf-8
+logging:
+  level: info
+  file: ./log/smalltools.log
+
+
